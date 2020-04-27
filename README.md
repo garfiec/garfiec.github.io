@@ -56,13 +56,14 @@ gplus_username:  lorem_ipsum
 
 In order to compile the assets and run Jekyll on local you need to follow those steps:
 
-- Install [NodeJS](https://nodejs.org/)
+- Install [NodeJS v10.20.1](https://nodejs.org/)
 - Run `npm install`
 - Run `gulp`
 
-### With Docker
+### Running Jekyll/Gulp on Docker (preferred)
 
-1. TODO
+- To run Jekyll serve (build site real time and host), run `./jekyll-docker-serve.sh`
+- To run Gulp (TODO)
 
 ## Credits
 
