@@ -1,0 +1,9 @@
+# Mac OS
+.DS_STORE
+
+# Node
+node_modules
+
+# Jekyll
+_site
+.jekyll-cache
