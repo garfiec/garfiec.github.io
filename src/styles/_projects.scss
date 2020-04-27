@@ -1,0 +1,116 @@
+.section-projects {
+  font-size: 16px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  @media only screen and (min-width: $cut) {
+    // width: 80%;
+  }
+}
+
+.user-projects {
+  margin: 20px auto;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  h3 {
+    color: #000;
+    text-decoration-style: bold;
+    a {
+      text-decoration: none;
+      color: $accent-color;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  li {
+    font-size: 100%;
+  }
+  p {
+    margin-right: 5px;
+    font-size: 100%;
+  }
+}
+
+.contents {
+  @media only screen and (min-width: $cut) {
+    margin-left: 0;
+    margin-top: -2%;
+    float: left;
+    width: 58%;
+  }
+}
+
+.contents-right {
+  @media only screen and (min-width: $cut) {
+    float: right;
+    margin-top: -2%;
+    width: 58%;
+  }
+}
+.images-right {
+  @media only screen and (min-width: $cut) {
+    float: right;
+    width: 38%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+      float: right;
+    }
+  }
+}
+
+.images-left {
+  @media only screen and (min-width: $cut) {
+    float: left;
+    width: 38%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+      float: left;
+    }
+  }
+}
+
+.project-link {
+  display: inline-block;
+  // width: 100px;
+  font-size: 80%;
+  margin: 10px 0px;
+  padding: 5px;
+  color: $main;
+  background-color: transparent;
+  border: 1px solid $main;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  &:hover {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+  &:active {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+}

@@ -1,0 +1,37 @@
+.footer {
+  background: darken($main, 10%);
+  padding: 30px 0 30px 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 16px;
+  position: relative;
+  .footer-up {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    .icon {
+      width: 50px;
+      height: 50px;
+      background: $accent-color;
+      font-size: 30px;
+      line-height: 40pt;
+      cursor: pointer;
+    }
+  }
+  a {
+    text-decoration: none;
+    margin: 0;
+    color: #FFF;
+  }
+  .footer-content {
+    margin-top: 50px;
+    a:hover {
+      color: $accent-color;
+      text-decoration: underline;
+    }
+  }
+}

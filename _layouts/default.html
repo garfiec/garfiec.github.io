@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      {% include header.html %}
+      <section id="about" class="page-a section-about js--section-about">
+        {% include about.html %}
+      </section>
+      <section id="education" class="page-b section-education js--section-education">
+        {% include education.html %}
+      </section>
+      <section id="work-experience" class="page-a section-work-experience js--section-work-experience">
+        {% include work-experience.html %}
+      </section>
+      <section id="projects" class="page-b section-projects js--section-projects">
+        {% include projects.html %}
+      </section>
+      <section id="contact" class="page-b section-contact js--section-contact">
+        {% include contact.html %}
+      </section>
+        {{ content }}
+      {% include footer.html %}
+  </body>
