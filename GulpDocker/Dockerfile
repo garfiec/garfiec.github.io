@@ -14,12 +14,6 @@ ADD docker-shell-launcher.sh /root/docker-shell-launcher.sh
 
 ENTRYPOINT ["/root/docker-shell-launcher.sh"]
 
-# Old
-# docker build --tag gulp-v3 .
-# docker run --rm -d -v $(pwd)/:/mnt/ --name gulp gulp:latest tail -f /dev/null
-# bash -c "clear && docker exec -it gulp sh"
-# gulp js (build js)
-
 # New commands
 # docker build -t gulp GulpDocker
 # docker run --rm -v $(pwd)/:/mnt/ gulp:latest gulp [command]
