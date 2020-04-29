@@ -6,51 +6,28 @@
 <!-- ************************************************************************************ -->
 <div class="row">
 	<div class="user-posters">
-		<p>KatMaps</p>
-		<ul>
-			<li>Coming soon!</li>
-		</ul>
-		<p>Car Dex</p>
-		<ul>
-			<li>Developed a geocaching game integrating Smartcar's APIs into an Android app</li>
-			<li>Deployed game server to handle OAuth and user data</li>
-			<li>Used Kotlin, PHP, Smartcar Android SDK, Dagger 2, Retrofit, Google Maps SDK, OAuth</li>
-			<li>Won first place at the .dev x Smartcar Hackathon</li>
-		</ul>
-		<p>Where Am I</p>
-		<ul>
-			<li>Developed a cross-platform API that determines location with room-level precision</li>
-			<li>Assessed feasibility of using fingerprinting network signal strengths for geo-fencing</li>
-			<li>Explored various platforms' system APIs for data collection</li>
-			<li>API written in Kotlin using the facade pattern</li>
-		</ul>
-		<p>Course Availability Tracker</p>
-		<ul>
-			<li>Created an application that polls course registration pages to check for availability</li>
-			<li>Analyzed server responses using Burp Suite to examine site behavior</li>
-			<li>Utilized AutoRemote API to send notifications to Android devices</li>
-			<li>Program written in Python using the Beautiful Soup library</li>
-		</ul>
-		<p>Ventra Card Emulation</p>
-		<ul>
-			<li>Researched EMV smart card communication protocols</li>
-			<li>Interpreted test card data to simulate a RFID transit card via NFC</li>
-			<li>Captured APDU responses from a card using an android APDU emulator</li>
-			<li>Created a proof-of-concept Android app to further test findings</li>
-			<li>Used Android Studio, Java, and host-card emulation APIs</li>
-		</ul>
-		<p>Smile Bot 5000</p>
-		<ul>
-			<li>Developed an Android app that scans for smiles which illuminates an exhibit</li>
-			<li>Utilized serial communication between Android and Arduino for data transmission</li>
-			<li>Used Arduino, Kotlin, Firebase ML Kit, RxRelay, CameraKit, and Arduino-Library</li>
-		</ul>
-		<p>Arduino Musical Instrument</p>
-		<ul>
-			<li>Created a musical instrument that uses proximity  to determine pitch of sound</li>
-			<li>Combined arduinos for two dedicated processes: tone generation and data collection</li>
-			<li>Integrated bit shifting to simultaneously transfer one byte at a time</li>
-			<li>Used Arduino and C</li>
-		</ul>
+		<h3>KatMaps</h3>
+		<p>Coming soon!</p>
+		<h3>Car Dex</h3>
+		<p>In this hackathon, the objective was to create an application of our choice that used Smartcar's APIs. Smartcar is a start-up that provides a common API that enables developers to communiate with a wide variety of internet connected cars from different manufactures. Considering that I was recently working on the BMW Connected app at the time, I figured that a utility application would be the obvious choice and one that most groups would be doing. Thus, I decided that it would be fun to gamify the API with a geo-caching Android application.</p>
+		<h3>Where Am I</h3>
+		<p>
+			This is something I've wanted to do for a long time. I've previously created a proof-of-concept many moons ago via Tasker profiles (for the uninitiated, Tasker is a powerful automation app for Android), so I knew this was possible. The approach was simple, we live in an era that is fairly dense with WiFi access points. All I had to do was perform some simple WiFi triangulation on a few networks to determine what room I was in. Since I had to manually create a few dozen profiles in Tasker just to get various signal strengths from WiFi scans, I had to limit myself to two access points for room detection. Even with this severe limitation, I was able to get pretty good room level precision. I was able to map detect whether I was in my bedroom, kitchen, living room, or basement. With this context, one of my use cases was that I could tell Google Now to "play music" and it would know which room's Chromecast to play to (this was way before Google switched to Assistant and shortly before IoT devices became commonplace). This made me feel pretty cool at the time.<br><br>
+			Eventually, I had the technical skills to make something like this. In designing Where Am I, I wanted to be cross-platform, but with an priority emphasis on Android. I had no Android development experience at this time but wanted to ultimately port this library over to Android. This influenced my decision to write the library in Kotlin and use SQLite for persistence. I designed a common API where there could be multiple implementations of fingerprinting and implementations for different platforms. For fingerprinting, I let the user provide a name/tag for the location they're doing a WiFi scan snapshot of. The lookup algorithm works by checking how many of the access points fall within the min/max range for each relevant access point. A higher proportion of access points hitting the snapshot range will yield a higher confidence that the user is at the predicted location. The result was that I was able to distinguish between rooms on the UIC campus given a few meters apart with reasonable accuracy and precision.<br><br>
+			Funny thing is, in my attempt to find a way to get this library to perform Wifi scans on Windows, I noticed that someone else had created a library with the exact same name with the exact same goal but with Python and using scikit-learn instead of my more primative fingerprinting method. It was like a déjà vu moment for me. In the end, it was still fun to make, and I was able to build the thing I wanted to make for so long.
+		</p>
+		<p>It's open-source, find the library here! - <a class="project-link" href="https://github.com/garfiec/WhereAmI">Where Am I</a></p>
+		<h3>Course Availability Tracker</h3>
+		<p>Coming soon!</p>
+		<h3>Ventra Card Emulation</h3>
+		<p>Coming soon!</p>
+		<h3>Smile Bot 5000</h3>
+		<p>
+			The intention is to make you feel morbid... Technology is often a double edged sword: it can help us but can also hurt us. I wanted to explore how technology can be used to elicit a response from people that's not always desirable. In many cases, the effects of technology on people are not apparent. In this case of this project, I wanted to exaggerated this malicious feeling.<br><br>
+			Smile Bot 5000 works by illuminating a lighted gallery platform only if the viewer puts on a big grin. Unfortunately for the viewer, the gallery pictures are depressing pictures of adults and kids having a terrible day and the only way they could see the gallery is by grinning through it... really makes you feel like a jerk afterwards.
+		</p>
+		<p>Find my tutorial here! - <a class="project-link" href="https://introtonewmediaarts.wordpress.com/2019/04/10/smile-enforcement-bot-5000-wearable-interactive-project/">Smile Enforcement Bot 5000</a></p>
+		<h3>Arduino Musical Instrument</h3>
+		<p>Coming soon!</p>
 	</div>
 </div>
