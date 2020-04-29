@@ -7,7 +7,19 @@ description: Garfie Chiu's Portfolio
 # User settings
 username: Garfie Chiu
 user_title: I'm an Android Developer
-user_description: <h3>Endorsements</h3> Garfie is a very talented junior Android Developer. He cares about maps, the soundproofing on his Tesla, and getting a good value at Costco. <br> - Fabio
+user_description: "
+Hi! My name is Garfie, a Chicago native. 
+I'm a software developer specializing in Android app development. I graduated from the University of Illinois at Chicago in 2019. 
+During that time, I took an internship at BMW Technology to help refactor some legacy code and notably created a maps library for integrating multiple map providers. 
+I now work at Groupon and- lo and behold, once again worked on map related features that led me to open-source <a href='https://github.com/groupon/KatMaps'>KatMaps</a>. <br><br>
+
+Besides my passion for maps, I love food, I love road tripping, I enjoy cars, and I love building things. 
+I enjoy grubbing food from all over the city, chefing up food, and watching food videos from the likes of Babish or Ugly Delicious. 
+I have strong inclinations towards taking the occasional weekend get away road-trip to nearby state parks for a hike.
+I am highly enthusiastic on learning about, driving, and working on cars. I love my parent's Honda Odyssey as much as my former BMW E85 Z4 as much as my current Tesla Model 3.
+As an engineer, I also have an affinity towards learning/building/tinkering with software/hardware (from micro-controllers to mechanical parts).
+
+<h3>Endorsements</h3><i>Garfie is a very talented junior Android Developer. He cares about maps, the soundproofing on his Tesla, and getting a good value at Costco.<br>- Fabio</i>"
 user_bio_image_description: Me in a pool of Android plushies at the Urbana-Champaign hackathon. 
 email: chiu.garfie@gmail.com
 github_username:  garfiec
