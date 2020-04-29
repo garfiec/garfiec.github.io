@@ -36,7 +36,7 @@ $(document).ready(function() {
 
  function sendEmail(fname, femail, fmessage) {
      console.log("inside send Emila functions");
-    $.post("https://formspree.io/{{site.email}}", 
+    $.post("https://formspree.io/mwkreqaz", 
     {
         name: fname,
         email: femail,
